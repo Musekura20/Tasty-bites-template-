@@ -3,9 +3,48 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;700&family=Fraunces:wght@600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+    <title>Tasty Bites | Simple recipes for every day</title>
 </head>
-<body>
-    
-</body>
+<body class="bg-stone-50 text-stone-800 font-['DM_Sans']">
+
+  <!-- ========== NAVBAR ========== -->
+  <header class="bg-white shadow-sm sticky top-0 z-50">
+    <nav class="max-w-6xl mx-auto px-4 py-4 flex items-center justify-between">
+      <a href="index.html" class="font-display text-2xl font-bold text-green-900">
+        <i class="fa-solid fa-utensils text-amber-500 inline-block hover:rotate-12 transition"></i> Tasty Bites
+      </a>
+      <!-- hidden on phones, shown from tablet size (md) up -->
+      <ul class="hidden md:flex gap-8 font-medium">
+        <li><a href="index.html" class="hover:text-green-700">Home</a></li>
+        <li><a href="#posts" class="hover:text-green-700">Recipes</a></li>
+        <li><a href="#about" class="hover:text-green-700">About</a></li>
+      </ul>
+      <a href="#posts" class="bg-green-900 text-white px-5 py-2 rounded-full text-sm font-medium hover:bg-green-700 transition">
+        <i class="fa-solid fa-magnifying-glass"></i> Browse
+      </a>
+    </nav>
+  </header>
+
+  <!-- ========== HERO BANNER ========== -->
+  <section class="relative h-[28rem] md:h-[34rem] flex items-center">
+    <img src="images/food-banner-img2.jpg"
+         alt="Table full of delicious food" class="absolute inset-0 w-full h-full object-cover">
+    <div class="absolute inset-0 bg-green-950/70"></div>
+
+    <div class="relative max-w-6xl mx-auto px-4 text-white">
+      <p class="text-amber-300 font-medium mb-3 animate-pulse"><i class="fa-solid fa-bowl-food"></i> Fresh recipes every week</p>
+      <h1 class="font-['Fraunces'] text-4xl md:text-6xl font-bold max-w-2xl leading-tight">
+        Cook simple. Eat happy.
+      </h1>
+      <p class="mt-4 text-lg text-stone-200 max-w-xl">
+        Easy recipes, kitchen tips and food stories for students and busy people.
+      </p>
+      <a href="#posts" class="inline-block mt-8 bg-amber-400 text-green-950 font-bold px-8 py-3 rounded-full hover:bg-amber-300 hover:scale-105 transition">
+        Explore recipes <i class="fa-solid fa-arrow-right ml-1 inline-block animate-bounce"></i>
+      </a>
+    </div>
+  </section>
 </html>
